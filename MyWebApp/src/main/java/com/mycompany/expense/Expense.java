@@ -1,11 +1,13 @@
 package com.mycompany.expense;
 
 public class Expense {
+    //expense properties
     private String id;
     private Float amount;
     private String note;
     private String category;
 
+    //expense class constructor method
     public Expense(String id, Float amount, String note, String category) {
         this.id = id;
         this.amount = amount;
@@ -13,6 +15,7 @@ public class Expense {
         this.category = category;
     }
 
+    //getter and setter methods for each property
     public String getId() {
         return id;
     }
@@ -45,6 +48,7 @@ public class Expense {
         this.category = category;
     }
 
+    //returns the properties of an expense instance as a string
     @Override
     public String toString() {
         return "Expense{" +
